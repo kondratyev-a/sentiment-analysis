@@ -8,13 +8,13 @@ class SentimentClassifier(object):
     @staticmethod
     def get_prediction_text(prediction):
         if prediction == 1:
-            return "Это положительный отзыв"
+            return "Is is positive review"
         elif prediction == 0:
-            return "Это отрицательный отзыв"
+            return "Is is negative review"
         elif prediction == -1:
-            return "Ошибка оценки отзыва"
+            return "Evaluation error"
         else:
-            return "Неожиданный результат"
+            return "Unexpected result"
 
     def predict_text(self, text):
         try:

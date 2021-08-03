@@ -1,14 +1,31 @@
 <!doctype html>
-<title>Sentiment demo</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-<h1>Демонстрация алгоритма для заказчика</h1>
-<form action="{{ url_for('index_page') }}" method=post>
-    <dl>
-        <dt>Введите пример отзыва на мобильный телефон: <br>
-        <textarea name=text rows=5 cols=40>{{ text }}</textarea><br>
-        <input type=submit value="Оценить">
-    </dl>
-</form>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Sentiment analysis</title>
 
-<br>Результат оценки:<br>
-{{ prediction_message }}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<form action="{{ url_for('index_page') }}" method=post>
+    <div class="row justify-content-center mt-5">
+        <div class="card border-dark text-center" style="width: 22rem;">
+            <div class="card-header bg-transparent border-success">
+                 <h5 class="card-title">Sentiment analysis</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Enter your review on a mobile phone</p>
+                <textarea name=text cols=38>{{ text }}</textarea><br>
+                <input type=submit value="Evaluate">
+            </div>
+            <div class="card-footer bg-transparent border-success">
+                <p>Evaluation result:</p>
+                <p>{{ prediction_message }}</p>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
