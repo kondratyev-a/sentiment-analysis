@@ -8,7 +8,7 @@ machine learning as a final project of Coursera specialization
 - Parse reviews from the website
 - Train the model for analysis
 - Display data as the web application
-- Evaluate the sentiment of review 
+- Evaluate the sentiment of review  
 ![Application screenshot](images/feedback.png)
 
 ## How to run the application
@@ -17,15 +17,16 @@ machine learning as a final project of Coursera specialization
 3. Open in browser http://localhost/sentiment-analysis
 4. Enter the text of the review and click Evaluate
 
-## ## Used technologies
+## Used technologies
 - **Requests and RegEx** to parse reviews
 - **Pandas and NumPy** for data analysis
 - **SGDClassifier** from **scikit-learn** to evaluate reviews
-- **Joblib** to dump model
+- **Joblib** to dump the model
 - **Flask** to run the application on the web
 - **Bootstrap** for the appearance of web page
 
 ## Files description
+- data - the folder with parsed reviews
 - main.py - the main script
 - templates/main.html - web-page template 
 - sentiment_classifier.py - review model
