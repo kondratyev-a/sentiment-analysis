@@ -1,0 +1,14 @@
+<!doctype html>
+<title>Sentiment demo</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+<h1>Демонстрация алгоритма для заказчика</h1>
+<form action="{{ url_for('index_page') }}" method=post>
+    <dl>
+        <dt>Введите пример отзыва на мобильный телефон: <br>
+        <textarea name=text rows=5 cols=40>{{ text }}</textarea><br>
+        <input type=submit value="Оценить">
+    </dl>
+</form>
+
+<br>Результат оценки:<br>
+{{ prediction_message }}
