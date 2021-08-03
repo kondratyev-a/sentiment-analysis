@@ -2,7 +2,7 @@
 Application to evaluate the sentiments of reviews about mobile phones.
 The application was created to learn and demonstrate the abilities of
 machine learning as a final project of Coursera specialization
-[Machine Learning and Data Analysis](https://www.coursera.org/specializations/machine-learning-data-analysis).  
+[Machine Learning and Data Analysis](https://www.coursera.org/specializations/machine-learning-data-analysis).
 In the in-class Kagle competition within the project, I received 39 place and achieved an accuracy of 90%.
 
 ## Application features
